@@ -59,7 +59,7 @@ def play(board)
     
     
   if won?(board)
-    who_won = current_player(board)
+    who_won = current_player(board) == "X" ? "O" : "X"
     
     puts "Congratulations #{who_won}!"
   elsif full?(board)
