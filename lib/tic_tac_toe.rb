@@ -58,7 +58,6 @@ def play(board)
     turn(board)
     the_turn += 1
     who_won = current_player(board)
-    
   end 
     
   if won?(board)
