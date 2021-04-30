@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-30T00:38:15+00:00">2021-04-30T00:38:15+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-30T00:39:54+00:00">2021-04-30T00:39:54+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         30.8
+         37.1
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>60</td>
         <td>59</td>
         <td>1</td>
-        <td>30.8</td>
+        <td>37.1</td>
       </tr>
       
     </tbody>
@@ -417,43 +417,43 @@
         <li class="covered" data-hits="12" data-linenumber="55">
           <span class="hits">12</span>
           
-          <code class="ruby">    while the_turn &lt; amount_turns &amp;&amp; !over?(board) </code>
+          <code class="ruby">  while the_turn &lt; amount_turns &amp;&amp; !over?(board) </code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="56">
           <span class="hits">17</span>
           
-          <code class="ruby">      turn(board)</code>
+          <code class="ruby">    turn(board)</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="57">
           <span class="hits">17</span>
           
-          <code class="ruby">      the_turn += 1</code>
+          <code class="ruby">    who_won = current_player(board)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="covered" data-hits="17" data-linenumber="58">
+          <span class="hits">17</span>
           
-          
-          <code class="ruby">    end </code>
+          <code class="ruby">    the_turn += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
           <code class="ruby">    </code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="60">
+        <li class="covered" data-hits="12" data-linenumber="61">
           <span class="hits">12</span>
           
           <code class="ruby">  if won?(board)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="61">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    who_won = current_player(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
@@ -732,26 +732,26 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="108">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="66" data-linenumber="108">
+          <span class="hits">66</span>
           
           <code class="ruby">  number_turns = 0</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="109">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="66" data-linenumber="109">
+          <span class="hits">66</span>
           
           <code class="ruby">  board.each do |box|</code>
         </li>
       
-        <li class="covered" data-hits="378" data-linenumber="110">
-          <span class="hits">378</span>
+        <li class="covered" data-hits="594" data-linenumber="110">
+          <span class="hits">594</span>
           
           <code class="ruby">    if box == &quot;X&quot; || box == &quot;O&quot;</code>
         </li>
       
-        <li class="covered" data-hits="93" data-linenumber="111">
-          <span class="hits">93</span>
+        <li class="covered" data-hits="145" data-linenumber="111">
+          <span class="hits">145</span>
           
           <code class="ruby">      number_turns += 1</code>
         </li>
@@ -768,8 +768,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="114">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="66" data-linenumber="114">
+          <span class="hits">66</span>
           
           <code class="ruby">  number_turns</code>
         </li>
@@ -798,14 +798,14 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="119">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="37" data-linenumber="119">
+          <span class="hits">37</span>
           
           <code class="ruby">  if turn_count(board) == 0 || turn_count(board) % 2 == 0</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="120">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="20" data-linenumber="120">
+          <span class="hits">20</span>
           
           <code class="ruby">    return &quot;X&quot;</code>
         </li>
@@ -816,8 +816,8 @@
           <code class="ruby">  else</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="122">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="17" data-linenumber="122">
+          <span class="hits">17</span>
           
           <code class="ruby">    return &quot;O&quot;</code>
         </li>
