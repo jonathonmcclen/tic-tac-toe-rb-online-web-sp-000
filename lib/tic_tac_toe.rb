@@ -51,7 +51,7 @@ def play(board)
   
   amount_turns = 9
   the_turn = 0
-
+  who_won = current_player(board)
   while the_turn < amount_turns && !over?(board) 
     turn(board)
     who_won = current_player(board)
