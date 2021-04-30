@@ -54,11 +54,11 @@ def play(board)
 
   while the_turn < amount_turns && !over?(board) 
     turn(board)
+    who_won = current_player(board)
     the_turn += 1
   end 
     
   if won?(board)
-    who_won = current_player(board)
     
     puts "Congratulations #{who_won}!"
   elsif full?(board)
