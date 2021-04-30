@@ -53,8 +53,8 @@ def play(board)
   the_turn = 0
 
     while the_turn < amount_turns && !over?(board) 
-      
-      turn(board)the_turn += 1
+      turn(board)
+      the_turn += 1
     end 
     
   if won?(board)
