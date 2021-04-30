@@ -48,16 +48,18 @@ end
 
 
 def play(board)
+  
   amount_turns = 9
   the_turn = 0
-  if !full?(board) && !won?(board)
-    while the_turn < amount_turns
+
+    while the_turn < amount_turns && !over?(board) 
       the_turn += 1
       turn(board)
-      
     end 
-  elsif won?(board)
-   who_won = current_player(board) == "X" ? "O" : "X"
+    
+    
+  if won?(board)
+    who_won = current_player(board) == "X" ? "O" : "X"
     
     puts "Game Over!"
     puts "Player #{who_won} Won!"
