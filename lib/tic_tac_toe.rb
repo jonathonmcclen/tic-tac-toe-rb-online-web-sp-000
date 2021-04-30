@@ -58,11 +58,7 @@ def play(board)
     end 
     
   if won?(board)
-    who_won = if current_player(board) == "X"
-    "O"
-  else
-    "X"
-  end 
+    who_won = if current_player(board)
     
     puts "Congratulations #{who_won}!"
   elsif full?(board)
