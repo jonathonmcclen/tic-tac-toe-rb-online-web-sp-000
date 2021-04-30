@@ -57,7 +57,6 @@ def play(board)
       turn(board)
     end 
     
-    
   if won?(board)
     who_won = current_player(board) == "X" ? "O" : "X"
     
