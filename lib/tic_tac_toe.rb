@@ -52,16 +52,13 @@ def play(board)
   amount_turns = 9
   the_turn = 0
   
-  who_won = current_player(board)
-  
   while !over?(board) 
     turn(board)
     the_turn += 1
-    who_won = current_player(board)
   end 
     
   if won?(board)
-    
+    who_won = winner(board)
     puts "Congratulations #{who_won}!"
   elsif full?(board)
     puts "Cat's Game!"
